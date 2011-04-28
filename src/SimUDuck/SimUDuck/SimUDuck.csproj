@@ -43,7 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DecoyDuck.cs" />
     <Compile Include="Duck.cs" />
+    <Compile Include="IFlyable.cs" />
+    <Compile Include="IQuackable.cs" />
     <Compile Include="MallardDuck.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
