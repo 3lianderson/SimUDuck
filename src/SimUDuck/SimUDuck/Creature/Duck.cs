@@ -5,8 +5,8 @@ namespace SimUDuck.Creature
 {
     abstract class Duck
     {
-        protected readonly IFlyBehavior flyBehavior;
-        protected readonly IQuackBehavior quackBehavior;
+        protected IFlyBehavior flyBehavior;
+        protected IQuackBehavior quackBehavior;
 
         protected Duck(IFlyBehavior flyBehavior, IQuackBehavior quackBehavior)
         {
@@ -27,6 +27,16 @@ namespace SimUDuck.Creature
         public void Swim()
         {
             Console.Out.WriteLine("Swim");
+        }
+
+        public void SetFlyBehavior(IFlyBehavior flyBehavior)
+        {
+            this.flyBehavior = flyBehavior;
+        }
+
+        public void SetQuackBehavior(IQuackBehavior quackBehavior)
+        {
+            this.quackBehavior = quackBehavior;
         }
 
         public abstract void Display();
