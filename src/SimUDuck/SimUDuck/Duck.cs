@@ -4,7 +4,7 @@ namespace SimUDuck
 {
     abstract class Duck
     {
-        public void Quack()
+        public virtual void Quack()
         {
             Console.Out.WriteLine("Quack");
         }
