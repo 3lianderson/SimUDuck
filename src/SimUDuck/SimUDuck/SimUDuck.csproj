@@ -43,6 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creature\Behavior\Flyless.cs" />
+    <Compile Include="Creature\Behavior\FlyWithWings.cs" />
+    <Compile Include="Creature\Behavior\IFlyBehavior.cs" />
+    <Compile Include="Creature\Behavior\IQuackBehavior.cs" />
+    <Compile Include="Creature\Behavior\MuteQuack.cs" />
+    <Compile Include="Creature\Behavior\Quack.cs" />
+    <Compile Include="Creature\Behavior\Squeak.cs" />
     <Compile Include="Creature\DecoyDuck.cs" />
     <Compile Include="Creature\Duck.cs" />
     <Compile Include="Creature\MallardDuck.cs" />
@@ -51,9 +58,7 @@
     <Compile Include="Creature\RedheadDuck.cs" />
     <Compile Include="Creature\RubberDuck.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Creature\Behavior\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
