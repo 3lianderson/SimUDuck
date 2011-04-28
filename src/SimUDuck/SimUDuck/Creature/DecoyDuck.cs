@@ -1,7 +1,7 @@
 ﻿using System;
 using SimUDuck.Creature.Behavior;
 
-namespace SimUDuck
+namespace SimUDuck.Creature
 {
     class DecoyDuck : Duck
     {

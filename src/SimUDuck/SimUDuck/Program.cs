@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using SimUDuck.Creature;
 
 namespace SimUDuck
 {
@@ -9,6 +8,21 @@ namespace SimUDuck
     {
         static void Main(string[] args)
         {
+            IEnumerable<Duck> ducks = new List<Duck>() { new DecoyDuck(), new MallardDuck(), new RedheadDuck(), new RubberDuck() };
+
+            PrintDucks(ducks);
+        }
+
+        private static void PrintDucks(IEnumerable<Duck> ducks)
+        {
+            foreach(Duck duck in ducks)
+            {
+                duck.Display();
+                duck.PerformFly();
+                duck.PerformQuack();
+                duck.Swim();
+                Console.Out.WriteLine();
+            }
         }
     }
 }
